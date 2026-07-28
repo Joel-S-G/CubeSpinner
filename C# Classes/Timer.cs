@@ -6,7 +6,8 @@ namespace CubeSpinner
     public enum timerState //the timer will be designed as a simple state machine, the following are the states, originally they were going to be bool flag but i realised that is that happened there was a possibility that two flag could be triggered simultaneusly and that is not possible (mutually exclusive e.g. isStop and isStart cannot happen at the same time )
        {
             isIdle, //nothing happening
-            isReady, //this is for when they are holding down the spacebar and ready to solve
+            isHolding, //holding the spacebar ready to solve / arming the timer
+            isReady, // 300ms delay passed and ready to solve
             isInspecting, //inspection timer, might not be used
             isRunning, // timer is running
             isStopped // spacebar is pressed again
@@ -23,8 +24,8 @@ namespace CubeSpinner
 
         private DateTime holdStartedAt;
         private DateTime sovleStartedAt;
-        System.Threading.Timer pollTimer;
-        public event Action Statechanged;
+        System.Threading.Timer? pollTimer;
+        public event Action? Statechanged;
 
 
         public void spaceDown() //behaviours for when the spacebar is held/pressed down
@@ -41,7 +42,7 @@ namespace CubeSpinner
 
                 case timerState.isStopped: //arms timer from stop
                 {
-                    State = timerState.isReady; //arms the timer
+                    State = timerState.isHolding; //arms the timer
                     holdStartedAt = DateTime.UtcNow;
                     StartPolling();
                     break;

@@ -24,7 +24,7 @@ function handleKeyDown(ev)
 
 
     console.log("keydown", ev.code, ev.repeat) //writes to debug log
-    ev.preventDefult(); //space usually causes a page to scroll, this prevents that
+    ev.preventDefault(); //space usually causes a page to scroll, this prevents that
     dotNetRef.invokeMethodAsync("OnSpaceDown");
 }
 
@@ -35,7 +35,7 @@ function handleKeyUp(ev)
    if (isTypingInInput(ev.target)) return;
 
    console.log("keyup", ev.code, ev.repeat)
-   ev.preventDefult();
+   ev.preventDefault();
    dotNetRef.invokeMethodAsync("OnSpaceUp");
 }
 

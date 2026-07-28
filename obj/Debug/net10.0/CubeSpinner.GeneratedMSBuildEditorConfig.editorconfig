@@ -33,12 +33,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/joels/OneDrive - Hills Road Sixth Form College/NEA/CubeSpinner/CubeSpinner/Pages/LandingPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFuZGluZ1BhZ2UucmF6b3I=
+[C:/Users/joels/OneDrive - Hills Road Sixth Form College/NEA/CubeSpinner/CubeSpinner/Pages/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wdHlMYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/joels/OneDrive - Hills Road Sixth Form College/NEA/CubeSpinner/CubeSpinner/Pages/NotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/joels/OneDrive - Hills Road Sixth Form College/NEA/CubeSpinner/CubeSpinner/Pages/TimerTest.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZXJUZXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/joels/OneDrive - Hills Road Sixth Form College/NEA/CubeSpinner/CubeSpinner/_Imports.razor]
