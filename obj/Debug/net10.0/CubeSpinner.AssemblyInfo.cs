@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CubeSpinner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+baf0457a6adb751a5a1f2dcd5f5dd2e76263d618")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f14a7fddd8df8dac868a1ed6525ceaf0d9ff9061")]
 [assembly: System.Reflection.AssemblyProductAttribute("CubeSpinner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CubeSpinner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

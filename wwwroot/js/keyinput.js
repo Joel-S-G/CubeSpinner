@@ -39,8 +39,8 @@ function handleKeyUp(ev)
    dotNetRef.invokeMethodAsync("OnSpaceUp");
 }
 
-function isTypingInInput(target)
+function isTypingInInput(target) //stops the spacebar from triggering timer when typing elsewhere (e.g. inputting solve time if using external timer)
 {
     const tag = target.tagName;
-    return tag ==
+    return tag == "INPUT" || tag == "TEXTAREA" || target.isContentEditalble;
 }

@@ -1115,17 +1115,17 @@ C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpin
 C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\CubeSpinner.pdb
 C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\ref\CubeSpinner.dll
 C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\CubeSpinner.sourcelink.json
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\CubeSpinner.7pyexxuedk.wasm
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\CubeSpinner.i2155fipfn.pdb
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\dotnet.6ojowyqjdp.js
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\CubeSpinner.7pyexxuedk.wasm.gz
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\CubeSpinner.i2155fipfn.pdb.gz
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\dotnet.6ojowyqjdp.js.gz
 C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\C# Classes\bin\Debug\net10.0\CubeSpinner.runtimeconfig.json
 C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\C# Classes\bin\Debug\net10.0\CubeSpinner.staticwebassets.endpoints.json
 C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\C# Classes\bin\Debug\net10.0\CubeSpinner.staticwebassets.runtime.json
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\cegrjk4z5k-{0}-7pyexxuedk-7pyexxuedk.gz
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\91d0q47yqi-{0}-i2155fipfn-i2155fipfn.gz
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\g986f8u6d7-{0}-6ojowyqjdp-6ojowyqjdp.gz
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\lfb53qvr3m-{0}-edrjan7c7c-edrjan7c7c.gz
-C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\zxt8it9tg2-{0}-bbfwlbevra-bbfwlbevra.gz
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\lfb53qvr3m-{0}-qyck0yyw1u-qyck0yyw1u.gz
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\CubeSpinner.lr2b4vxdjy.wasm
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\CubeSpinner.epuygllsyg.pdb
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\dotnet.raxt1dctvd.js
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\CubeSpinner.lr2b4vxdjy.wasm.gz
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\CubeSpinner.epuygllsyg.pdb.gz
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\bin\Debug\net10.0\wwwroot\_framework\dotnet.raxt1dctvd.js.gz
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\cegrjk4z5k-{0}-lr2b4vxdjy-lr2b4vxdjy.gz
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\91d0q47yqi-{0}-epuygllsyg-epuygllsyg.gz
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\g986f8u6d7-{0}-raxt1dctvd-raxt1dctvd.gz
+C:\Users\joels\OneDrive - Hills Road Sixth Form College\NEA\CubeSpinner\CubeSpinner\obj\Debug\net10.0\compressed\zxt8it9tg2-{0}-g15ym7b1vq-g15ym7b1vq.gz
