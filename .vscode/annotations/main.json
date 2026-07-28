@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "branchName": "main",
+  "annotations": [
+    {
+      "fileName": "wwwroot/js/keyinput.js",
+      "line": 6,
+      "positionStart": {
+        "line": 6,
+        "character": 60
+      },
+      "positionEnd": {
+        "line": 6,
+        "character": 62
+      },
+      "text": "ev just stands for event",
+      "codeSnippet": "ev",
+      "anchor": {
+        "selectedText": "ev",
+        "prefixContext": "istener(\"keydown\", (ev) => {console.log(",
+        "suffixContext": ".key)});  //keyboard event(ev) -> logs i"
+      },
+      "id": 1,
+      "status": "active",
+      "createdAt": "2026-07-27T14:58:01.413Z"
+    }
+  ]
+}
