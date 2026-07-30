@@ -11,14 +11,16 @@ namespace CubeSpinner
             isInspecting, //inspection timer, might not be used
             isRunning, // timer is running
             isStopped // spacebar is pressed again
-
        }
+
+
+       
     public class Timer
     { 
      
         public timerState State {get; private set;} = timerState.isIdle;
         public TimeSpan ElapsedTime {get; private set;} 
-        public int startDelayMS {get; set;} = 300; //defult value is 300ms but allows it to be changed by the user
+        public int startDelayMS {get; set;} = 800; //defult value is 800ms but allows it to be changed by the user
 
 
 
@@ -26,6 +28,7 @@ namespace CubeSpinner
         private DateTime sovleStartedAt;
         System.Threading.Timer? pollTimer;
         public event Action? Statechanged;
+        public event  Action<TimeSpan>? SolveCompleted;
 
 
         public void spaceDown() //behaviours for when the spacebar is held/pressed down
@@ -34,8 +37,8 @@ namespace CubeSpinner
             {
                 case timerState.isIdle: //arms timer from idle
                 {
-
-                    State = timerState.isReady;
+                    State = timerState.isHolding;
+                    holdStartedAt = DateTime.UtcNow;
                     StartPolling();
                     break;
                 }
@@ -51,11 +54,11 @@ namespace CubeSpinner
 
                 case timerState.isInspecting: //arms timer from inspection - reasearch how to toggle this based on if inspection feature is enabled, keep enabled?
                 {
-                    State = timerState.isReady;
+                    State = timerState.isHolding;
                     holdStartedAt = DateTime.UtcNow;
                     StartPolling();
                     break;
-                }         
+                }       
 
                 case timerState.isRunning: //stops the timer if running
                 {  
@@ -76,10 +79,11 @@ namespace CubeSpinner
                     break;
                 }
 
-                case timerState.isIdle: //if full delay is not met -> aborted attempt
+                case timerState.isHolding: //if full delay is not met -> aborted attempt
                 {
                     State = timerState.isIdle;
                     StopPolling();
+                    Statechanged?.Invoke();
                     break;
                 }   
             }
@@ -99,6 +103,8 @@ namespace CubeSpinner
             State = timerState.isStopped;
             ElapsedTime = DateTime.UtcNow - sovleStartedAt; //calculates elapsed time
             StopPolling();
+            Statechanged?.Invoke();
+            SolveCompleted?.Invoke(ElapsedTime);    
         }
 
         private void StartPolling()
@@ -114,7 +120,7 @@ namespace CubeSpinner
 
         private void Poll()
         {
-           if (State == timerState.isReady && (DateTime.UtcNow - holdStartedAt).TotalMilliseconds >= startDelayMS) //check if delay time has been met
+           if (State == timerState.isHolding && (DateTime.UtcNow - holdStartedAt).TotalMilliseconds >= startDelayMS) //check if delay time has been met
            {
              State = timerState.isReady;
            }

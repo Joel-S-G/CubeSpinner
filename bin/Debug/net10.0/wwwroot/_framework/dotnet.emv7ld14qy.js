@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "CubeSpinner",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-HbH8Sx/8tut0qwRNVJXCnet+j+cl1KCYdLxv/nGTA0k=",
+    "hash": "sha256-oGeTlsLGqhxVSvU6sFCUA0Z8IMd6Ay7a5rRs3mrtpgI=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.ikrs475e5v.js"
@@ -1242,16 +1242,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "CubeSpinner.wasm",
-        "name": "CubeSpinner.azf5npdtrm.wasm",
-        "hash": "sha256-2pQAzrxJ+TnHyPgZ4qVHFkW0Pxf9XR29a7oRecOCNAc=",
+        "name": "CubeSpinner.w12rpe30uv.wasm",
+        "hash": "sha256-3NvPXdlAM0eZajabOWnmfkAlpd8Y1UGLb5Pl5FVrDh8=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "CubeSpinner.pdb",
-        "name": "CubeSpinner.uteq2xb8gy.pdb",
-        "hash": "sha256-bhx7phSMN3mcYhzk3eDUa0K1vElqpn2O88HV4a9kBEQ=",
+        "name": "CubeSpinner.kdeonl5301.pdb",
+        "hash": "sha256-yFloxANZlrBmc8z83/30wAB/ZQZ0mE1lzMtXpeGmjKE=",
         "cache": "force-cache"
       }
     ],

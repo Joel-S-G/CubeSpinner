@@ -69,10 +69,10 @@
     private string StateClass => Timer.State switch
     {
         timerState.isIdle => "state-idle",
+        timerState.isHolding => "state-holding", 
         timerState.isReady => "state-ready",
         timerState.isRunning => "state-running",
         timerState.isStopped => "state-stopped",
-        timerState.isInspecting => "state-inspecting",
         _ => ""
     };
 
@@ -95,7 +95,7 @@
         text-align: center;
         padding: 3rem;
         border-radius: 12px;
-        transition: background-color 0.15s ease;
+        transition: background-color 0.08s linear, color 0.08s linear, box-shadow 0.08s linear;
         background-color: #1e1e1e;
         color: white;
         font-family: monospace;
@@ -112,22 +112,24 @@
         font-size: 0.9rem;
     }
 
-    /* not yet armed / reset */
+    // not yet armed / reset 
     .state-idle, .state-stopped {
         background-color: #1e1e1e;
     }
 
-    /* held, still waiting on the delay threshold */
-    .state-inspecting {
-        background-color: #7a1f1f; /* red-ish: not ready yet */
+    // held, still waiting on the delay threshold 
+    .state-holding {
+        background-color: #b02525; // red: not ready yet 
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) inset, 0 0 24px rgba(176, 37, 37, 0.28);
     }
 
-    /* delay threshold passed, releasing will start the clock */
+    // delay threshold passed, releasing will start the clock 
     .state-ready {
-        background-color: #1f7a2f; /* green: go */
+        background-color: #1f8f3a; // green: go 
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) inset, 0 0 24px rgba(31, 143, 58, 0.22);
     }
 
-    /* actively timing */
+    // actively timing 
     .state-running {
         background-color: #1e1e1e;
         color: #4caf50;
