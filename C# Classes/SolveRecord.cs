@@ -22,6 +22,21 @@ namespace CubeSpinner
             DNF,                    
         }
 
+        public void FormatPenalty()
+        {
+            if (penaltyStatus == Penalty.OK)
+            {
+
+            }
+            if (penaltyStatus == Penalty.Plus2)
+            {
+
+            }
+            if (penaltyStatus == Penalty.DNF)
+            {
+                
+            }
+        }
 
         public TimeSpan? FinalTime => penaltyStatus switch
         {
@@ -30,7 +45,7 @@ namespace CubeSpinner
             _ => RawTime
         };
 
-
+        
         public SolveRecord(TimeSpan rawTime, string scramble)
         {
             SolveID = Guid.NewGuid();

@@ -1,3 +1,6 @@
+// format solve -> newSolve append-> List solves
+
+
 using System;
 using System.Runtime.CompilerServices;
 
@@ -10,25 +13,38 @@ namespace CubeSpinner
         public string? name { get; set;}
         public List<SolveRecord> solves;
         public string? CubeType{get; set;}
+        public record newSolve;
+
 
         
         
-        public void FormatData() // outputs data in form Session(number/name)[{penaltyStatus}, (time in ms), "scramble", "dateSolved"]
+        public List<string> FormatData() // outputs data in form Session(number/name)[{penaltyStatus}, (time in ms), "scramble", "dateSolved"]
         {
-            return;
-        }
+                       
+            List<string> formattedOutput = new();
 
-        public void ExportSolve() // allows the export of solves in the class
+
+            foreach (SolveRecord solve in solves) //iterates through solves and formats them
+            {
+                formattedOutput.Add($"{solve.penaltyStatus}, {solve.FinalTime?.TotalMilliseconds}ms, {solve.Scramble}, {solve.SolvedAt}");
+            } 
+
+            return formattedOutput;
+        }
+        
+
+        /*public void ExportSolve(SolveRecord solve) // allows the export of solves in the class
         {
             return;
-        }
+        }*/
 
         public void AddSolve()
         {
-            return;
+
+            
         }
 
-        public void RemoveSolve()
+        public void RemoveSolve(Guid solveId)
         {
             return;
         }
