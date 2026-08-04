@@ -13,7 +13,7 @@ namespace CubeSpinner
         public Penalty penaltyStatus { get; set;} = Penalty.OK; //set solve status as OK by defult (no penalty)
         
         
-    
+         
 
         public enum Penalty //defining penalty states
         {
@@ -22,22 +22,7 @@ namespace CubeSpinner
             DNF,                    
         }
 
-        public void FormatPenalty()
-         //
-        {
-            if (penaltyStatus == Penalty.OK)
-            {
-
-            }
-            if (penaltyStatus == Penalty.Plus2)
-            {
-
-            }
-            if (penaltyStatus == Penalty.DNF)
-            {
-                
-            }
-        }
+        
 
         public TimeSpan? FinalTime => penaltyStatus switch
         {
