@@ -2,6 +2,8 @@
 
 
 using System;
+using System.Data.Common;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
 namespace CubeSpinner
@@ -11,12 +13,9 @@ namespace CubeSpinner
         
         public bool isActive;
         public string? name { get; set;}
-        public List<SolveRecord> solves;
+        public required List<SolveRecord> solves;
         public string? CubeType{get; set;}
-        public record newSolve;
-
-
-        
+                    
         
         public List<string> FormatData() // outputs data in form Session(number/name)[{penaltyStatus}, (time in ms), "scramble", "dateSolved"]
         {
@@ -33,30 +32,60 @@ namespace CubeSpinner
         }
         
 
-        /*public void ExportSolve(SolveRecord solve) // allows the export of solves in the class
+        public void ExportSolve(SolveRecord solve) // allows the export of solves in the class
         {
             return;
-        }*/
-
-        public void AddSolve()
-        {
-
             
         }
 
-        public void RemoveSolve(Guid solveId)
+        public void AddSolve(SolveRecord solve)
         {
-            return;
+            if (solves ==null) //creates a new list if empty
+            {
+                solves = new List<SolveRecord>();
+            }
+            
+            solves.Add(solve);
+            
         }
 
-        public void GetSolve()
+        public void RemoveSolve(SolveRecord solve, Guid solveId)
         {
-            return;
+            for (int i = solves.Count -1; i > 0; i--)   //iterates through list to find the solve and then removes it at that index
+            {
+                if (solves[i].SolveID ==solveId)
+                {
+                    solves.RemoveAt(i);
+                    return;
+                }
+            }
         }
 
-        public void GetBestSolve()
+        public SolveRecord? GetSolve(Guid solveID)
         {
-            return;
+            for (int i = solves.Count - 1; i > 0; i--) // basically the same as RemoveSolve except it doesn't remove the solve at the index
+            {
+                if (solves[i].SolveID == solveID)
+                {
+                     return solves[i];
+                }
+            }   
+
+            return null;
         }
+
+        public SolveRecord? GetBestSolve()
+        {
+            var validsolve = solves
+                            .Where(solve => solve.FinalTime != null); //ensures the solve is valid by making sure that it is not null (DNF)
+            var lowestTime = validsolve
+                            .Where(solve => solve.FinalTime != null)  //solve doesn't = null, removes DNFs
+                            .OrderBy(solves => solves.FinalTime!.Value) // orders values 
+                            .FirstOrDefault(); //returns lowest value (or null if list is empty), this will return the value lowest in the list and by extension will have all the properties asscociated (e.g. the id, scramble, finaltime etc.)
+                      
+            return lowestTime;
+        
+        }
+
     }
 }

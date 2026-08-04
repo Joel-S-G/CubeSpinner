@@ -23,6 +23,7 @@ namespace CubeSpinner
         }
 
         public void FormatPenalty()
+         //
         {
             if (penaltyStatus == Penalty.OK)
             {
