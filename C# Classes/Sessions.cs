@@ -30,12 +30,19 @@ namespace CubeSpinner
 
             return formattedOutput;
         }
-        
 
-        public void ExportSolve(SolveRecord solve) // allows the export of solves in the class
+        public List<SolveRecord> SortbyTime()
         {
-            return;
-            
+            return solves   
+                .OrderBy(solves => solves.FinalTime ?? TimeSpan.MaxValue)
+                .ToList();
+        }
+
+        public List<SolveRecord> SortbyDate()
+        {
+            return solves   
+                .OrderByDescending(solves => solves.SolvedAt)
+                .ToList();
         }
 
         public void AddSolve(SolveRecord solve)
@@ -87,5 +94,6 @@ namespace CubeSpinner
         
         }
 
+    
     }
 }
