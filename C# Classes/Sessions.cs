@@ -17,6 +17,7 @@ namespace CubeSpinner
         public string? CubeType{get; set;}
                     
         
+        
         public List<string> FormatData() // outputs data in form Session(number/name)[{penaltyStatus}, (time in ms), "scramble", "dateSolved"]
         {
                        
@@ -85,6 +86,7 @@ namespace CubeSpinner
         
         }
 
+        
     
     }
 }
