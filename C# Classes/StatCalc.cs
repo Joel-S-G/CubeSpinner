@@ -241,12 +241,16 @@ namespace CubeSpinner
             {
                 return sortedTimes[lowerindex]; //rank landed on exactly one item
             }
+
+            double fraction = rank - lowerindex;
+            long lowerTicks = sortedTimes[lowerindex].Ticks;
+            long upperTicks = sortedTimes[upperindex].Ticks;
+            long blend = lowerTicks + (long)((upperTicks-lowerTicks) * fraction);
+
+            return TimeSpan.FromTicks(blend);
+
         }
         
-    
-
-
-
 
         
     }   
