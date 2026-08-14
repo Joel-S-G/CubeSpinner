@@ -2,7 +2,7 @@ using System;
 
 namespace CubeSpinner
 {
-    public class PyraScrambler : GenericScrambler
+    public class SkubeScrambler : GenericScrambler
     {
         protected override List<string> GetMoveList()
         {
@@ -16,12 +16,18 @@ namespace CubeSpinner
 
         protected override List<string> GetMoveSuffixes()
         {
-            return new List<string> {"", "'", "2"};
+            return new List<string> {"", "'"};
         }
 
-        protected override bool ValidCheck(List<string> currentscramble, string nextmove)
+        protected override bool ValidCheck(List<string> scramble, string potentialMove)
         {
-            return base.ValidCheck(currentscramble, nextmove);
+            return base.ValidCheck(scramble, potentialMove);
+        }
+
+        protected override string ScrambleGen()
+        {
+            return base.ScrambleGen();
+        
         }
     }
 }
