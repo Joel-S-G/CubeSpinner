@@ -34,7 +34,7 @@ namespace CubeSpinner
             if (index < 0)
             {
                 index = (index * -1) - 1;
-            }
+            }   
 
             sortedTimes.Insert(index, t);
         }
@@ -232,7 +232,7 @@ namespace CubeSpinner
                 return sortedTimes[0];
             }
 
-            double rank = (percentile/100) * (sortedTimes.Count-1);
+            double rank = percentile/100 * (sortedTimes.Count-1);
 
             int lowerindex = (int)Math.Floor(rank);
             int upperindex = (int)Math.Ceiling(rank);
